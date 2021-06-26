@@ -1,0 +1,105 @@
+import { StyleSheet } from "react-native";
+import * as CONSTANT from "../../../constants/constant";
+import { getSize } from "../../../constants/constant";
+import { theme } from "./../../../constants/colors";
+
+const styles = StyleSheet.create({
+  safearea: { backgroundColor: theme.colors.white },
+  headerContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    paddingHorizontal: 20,
+    height: 66,
+    backgroundColor: theme.colors.blue,
+  },
+  mainContainer: {
+    height: CONSTANT.SCREEN_HEIGHT - 120,
+    padding: 20,
+    paddingBottom: 70,
+  },
+  // flatlistContainer: {paddingBottom: 300},
+  itemContainer: {
+    borderWidth: 0.5,
+    borderRadius: 10,
+    marginBottom: 10,
+    borderColor: theme.colors.gray,
+    height: 300,
+  },
+  feedImage: {
+    height: 250,
+    width: "100%",
+    borderTopRightRadius: 10,
+    borderTopLeftRadius: 10,
+  },
+  userContainer: {
+    backgroundColor: theme.colors.blueLight,
+    height: 50,
+    borderBottomLeftRadius: 10,
+    borderBottomRightRadius: 10,
+    width: "100%",
+    alignItems: "center",
+    // justifyContent: 'space-between',
+    padding: 10,
+    flexDirection: "row",
+  },
+  userTitle: {
+    color: theme.colors.white,
+    marginStart: 10,
+    fontWeight: "600",
+    fontSize: 15,
+    width: "60%",
+    textTransform: "capitalize",
+  },
+  headerTitleText: { fontSize: 22, color: theme.colors.white },
+  itemIcon: { width: "45%", height: "100%" },
+  itemDetail: { width: "50%", margin: 10 },
+  itemTitle: { fontSize: getSize(16), fontWeight: "500" },
+  itemDescription: {
+    color: theme.colors.blue,
+    fontSize: getSize(12),
+    marginEnd: 10,
+  },
+  itemDescriptionContainer: {
+    flexDirection: "row",
+    marginBottom: 8,
+    marginTop: 5,
+  },
+  itemTagsContainer: { flexDirection: "row" },
+  itemTag: {
+    fontSize: getSize(12),
+    color: theme.colors.textGray,
+    marginEnd: 10,
+  },
+  headerIcon: { width: 24, height: 24 },
+  headerIconMed: { width: 22, height: 22, marginStart: 0 },
+  headerIconLarge: { width: 18, height: 18, marginStart: 15 },
+  addContainer: { position: "absolute", bottom: 100, right: 20 },
+  addIcon: { width: 45, height: 45 },
+  userIcon: { width: 35, height: 35 },
+  shareIcon: { width: 20, height: 20, marginHorizontal: 10 },
+  empty: {
+    width: "100%",
+    alignItems: "center",
+    justifyContent: "center",
+    height: CONSTANT.SCREEN_HEIGHT / 1.5,
+  },
+  chooseContainer: {
+    borderColor: theme.colors.blue,
+    borderWidth: 1,
+    padding: 10,
+    borderRadius: 10,
+    width: "40%",
+    alignItems: "center",
+  },
+  centerContainer: {
+    width: "100%",
+    height: 400,
+    borderWidth: 1,
+    marginVertical: 10,
+    borderRadius: 10,
+    borderColor: theme.colors.blue,
+  },
+  closeIcon: { width: 20, height: 20, marginBottom: 20 },
+});
+export default styles;
